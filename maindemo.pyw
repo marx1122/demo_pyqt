@@ -12,6 +12,11 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         #cargamos la configuración .ui en el objeto
         uic.loadUi("maindemo.ui",self)
+        self.setWindowTitle("Pantalla Demo DMS 1.0")
+        #self.showMaximized()
+        #Fijar tamaño de la ventana
+        self.setMinimumSize(600,400)
+        self.setMaximumSize(800,600)
 
 #Instancia para lanzar la aplicación
 app = QApplication(sys.argv)
